@@ -11,6 +11,21 @@
    * "rush my-global-command --help".
    */
   "commands": [
+    {
+      "name": "clean",
+      "commandKind":  "bulk",
+      "summary": "Deletes all generated files and restores to a clean state",
+      "ignoreMissingScript": true,
+      "enableParallelism": true
+    },
+    {
+      "name": "commitlint" ,
+      "commandKind": "global",
+      "summary": "Runs commitlint on the current branch",
+      "autoinstallerName": "rush-commitlint",
+      "shellCommand": "commitlint",
+      "safeForSimultaneousRushProcesses": true
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
@@ -182,6 +197,13 @@
    * For example, you might define a "--production" parameter for the "rush build" command.
    */
   "parameters": [
+    {
+      "parameterKind": "string",
+      "argumentName": "MESSAGE",
+      "longName": "--edit",
+      "description": "this is the parameter used for git commit message",
+      "associatedCommands": ["commitlint"]
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom parameter.

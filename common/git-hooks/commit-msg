@@ -1,0 +1,2 @@
+
+node common/scripts/install-run-rush.js commitlint --edit $1
