@@ -1,0 +1,12 @@
+{
+  "name": "rush-common",
+  "version": "0.0.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "@rush-temp/aggregator-server": {
+      "version": "file:projects/aggregator-server.tgz",
+      "integrity": "sha512-JSU98mcoRFSjMawhiy9HflGLgFhoRh55Ht2M7AG9xNOTvsEtb8V5ztiGugxQHeaSom/JXGQBgXXGPLaOBIRaCg=="
+    }
+  }
+}
