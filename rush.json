@@ -5,7 +5,7 @@
 
   "nodeSupportedVersionRange": ">=14.15.0 <15.0.0 || >=16.13.0 <17.0.0 || >=18.15.0 <20.11.0",
 
-  "npmVersion": "6.14.15",
+  "pnpmVersion": "8.6.3",
 
   "gitPolicy": {},
 
@@ -30,6 +30,12 @@
     {
       "projectFolder": "server/aggregator-server",
       "packageName": "aggregator-server",
+      "reviewCategory": "production",
+      "shouldPublish": false
+    },
+    {
+      "projectFolder": "libraries/core",
+      "packageName": "core",
       "reviewCategory": "production",
       "shouldPublish": false
     }

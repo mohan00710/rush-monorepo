@@ -1,6 +1,3 @@
-
 export const add = async () => {
-    console.log('hello')
+  console.log('hello world');
 };
-
-add()
